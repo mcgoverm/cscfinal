@@ -1,0 +1,234 @@
+
+	
+	/*Organization and Spacing*/
+  *{color: black;
+		font-family: arial, sans-serif;
+		text-align: center;
+		}
+	
+	.border{border: solid;
+		color:dodgerblue;
+    width: 50%;
+		object-fit: cover;
+    aspect-ratio: 1/1;
+		}
+		
+	.twogrid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+		row-gap: 80px;
+		}
+
+  .twogrid img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fourgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+		
+	.center {
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		}
+
+	h1{
+    padding: 20px;
+    margin-bottom: 0px;
+		}
+
+	.line-separator {
+  		width: 80%;
+  		height: 1px;
+  		background-color: #102ba3;
+  		margin: 15px auto;     
+		}
+
+  p {
+    margin: 50px;
+  }
+
+/*Styling navbar*/
+nav {
+  margin-top: 0px;
+  margin-bottom: 100px;
+}  
+
+nav a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+nav a.active {
+    background-color: #c5c4c4;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+  }
+
+/*Image Slider*/
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#leftArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  color: #05d9e8;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#rightArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  color: #05d9e8;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#leftArrow:hover,
+#rightArrow:hover {
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 806px;
+  aspect-ratio: 806 / 452;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*Clickable Cards*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.term {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.definition {
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  flex-grow: 1;
+}
+
+/*Boat animation */
+.container {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.water {
+  width: 90vw;
+  max-width: 1200px;
+  aspect-ratio: 8 / 3; 
+  margin: 0 auto 30px;
+  border: 2px solid #000;
+  background-image: url("images/racewalk.PNG");
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#boat {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  transform: translateY(-50%);
+  transition: left 0.4s ease;
+}
+
+.controls button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#message {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
