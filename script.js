@@ -5,14 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
   var button = document.querySelector("#submit");
   var output = document.querySelector("#output");
 
-  button.addEventListener("click", function() {
+if (button){
+    button.addEventListener("click", function() {
 
-    var name = document.querySelector("#name").value;
+      var name = document.querySelector("#name").value;
 
-    output.textContent = "Thank you for sending us " + name + ". We appreciate it!";
+      output.textContent = "Thank you for sending us " + name + ". We appreciate it!";
+    });
   });
-});
-
+}
 //Navbar
 document.addEventListener('DOMContentLoaded', function () {
   function removeActiveClass() {
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
   
+ if (currentPage){
   const currentPage = window.location.pathname.split('/').pop();
   console.log('Current page:', currentPage);
 
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
  });
+}
 
 //Image Slider
 document.addEventListener("DOMContentLoaded", function () {
@@ -63,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const articleContainer = document.getElementById("article-container");
-
+  if (articleContainer){
   let imgIndex = 0;
 
   function renderImage() {
@@ -71,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <img src="${imgUrlsArr[imgIndex]}" class="image" />
       <div class="text">${textArr[imgIndex]}</div>
     `;
+  }
   }
 
   window.previousImg = function () {
@@ -104,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Boat
+if (boat){
 document.addEventListener("DOMContentLoaded", function () {
   const boat = document.getElementById("boat");
   const leftBtn = document.getElementById("left");
@@ -160,4 +165,5 @@ document.addEventListener("DOMContentLoaded", function () {
   updateStepSize();
   updatePositionAndMessage();
 });
+}
 
