@@ -203,7 +203,7 @@ nav a.active {
   aspect-ratio: 8 / 3; 
   margin: 0 auto 30px;
   border: 2px solid #000;
-  background-image: url("images/racewalk.PNG");
+  background-image: url("Images/racewalk.PNG");
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: center;
