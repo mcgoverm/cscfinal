@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var button = document.querySelector("#submit");
   var output = document.querySelector("#output");
 
-if (button){
     button.addEventListener("click", function() {
 
       var name = document.querySelector("#name").value;
@@ -13,7 +12,7 @@ if (button){
       output.textContent = "Thank you for sending us " + name + ". We appreciate it!";
     });
   });
-}
+
 //Navbar
 document.addEventListener('DOMContentLoaded', function () {
   function removeActiveClass() {
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
   
- if (currentPage){
   const currentPage = window.location.pathname.split('/').pop();
   console.log('Current page:', currentPage);
 
@@ -47,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
  });
-}
 
 //Image Slider
 document.addEventListener("DOMContentLoaded", function () {
@@ -108,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Boat
-if (boat){
 document.addEventListener("DOMContentLoaded", function () {
   const boat = document.getElementById("boat");
   const leftBtn = document.getElementById("left");
@@ -165,5 +161,5 @@ document.addEventListener("DOMContentLoaded", function () {
   updateStepSize();
   updatePositionAndMessage();
 });
-}
+
 
