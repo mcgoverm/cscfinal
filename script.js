@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Image Slider
   const imgUrlsArr = [
-    "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Catch.jpg?v=1629920251",
-    "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Drive.jpg?v=1629920245",
-    "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Correct-Rowing-Position-Finish.jpg?v=1629920248",
-    "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Correct-Rowing-Technique-Recovery.jpg?v=1629920246"
+    "Images/catch.webp",
+    "Images/drive.webp",
+    "Images/finish.webp",
+    "Images/recovery.webp"
   ];
 
   const textArr = [
