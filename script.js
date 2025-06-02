@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const articleContainer = document.getElementById("article-container");
   if (articleContainer){
-  let imgIndex = 0;
+  var imgIndex = 0;
 
   function renderImage() {
     articleContainer.innerHTML = `
