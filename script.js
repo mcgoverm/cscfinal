@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
  });
 
 //Image Slider
-document.addEventListener("DOMContentLoaded", function () {
   const imgUrlsArr = [
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Catch.jpg?v=1629920251",
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Drive.jpg?v=1629920245",
@@ -71,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <img src="${imgUrlsArr[imgIndex]}" class="image" />
       <div class="text">${textArr[imgIndex]}</div>
     `;
-  }
   }
 
   window.previousImg = function () {
