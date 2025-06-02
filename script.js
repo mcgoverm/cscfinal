@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
  });
 
 //Image Slider
-document.addEventListener("DOMContentLoaded", function () {
   const imgUrlsArr = [
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Catch.jpg?v=1629920251",
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Drive.jpg?v=1629920245",
@@ -84,23 +83,20 @@ document.addEventListener("DOMContentLoaded", function () {
       renderImage();
     }
 
-    // Set up click event listeners for prev/next buttons
-    const prevButton = document.getElementById("prev-button");
-    const nextButton = document.getElementById("next-button");
+    // Add event listeners for buttons
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
 
-    if (prevButton) {
-      prevButton.addEventListener("click", previousImg);
+    if (leftArrow) {
+      leftArrow.addEventListener("click", previousImg);
     }
 
-    if (nextButton) {
-      nextButton.addEventListener("click", nextImg);
+    if (rightArrow) {
+      rightArrow.addEventListener("click", nextImg);
     }
 
     renderImage();
   }
-});
-
-
 
 //Term-definition Toggle
 document.addEventListener('DOMContentLoaded', function () {
