@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
  });
 
 //Image Slider
+document.addEventListener("DOMContentLoaded", function () {
   const imgUrlsArr = [
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Catch.jpg?v=1629920251",
     "https://cdn.shopify.com/s/files/1/0052/7043/7978/t/90/assets/Proper-Rowing-Position-Drive.jpg?v=1629920245",
@@ -62,27 +63,43 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   const articleContainer = document.getElementById("article-container");
-  if (articleContainer){
-  var imgIndex = 0;
 
-  function renderImage() {
-    articleContainer.innerHTML = `
-      <img src="${imgUrlsArr[imgIndex]}" class="image" />
-      <div class="text">${textArr[imgIndex]}</div>
-    `;
+  if (articleContainer) {
+    let imgIndex = 0;
+
+    function renderImage() {
+      articleContainer.innerHTML = `
+        <img src="${imgUrlsArr[imgIndex]}" class="image" />
+        <div class="text">${textArr[imgIndex]}</div>
+      `;
+    }
+
+    function previousImg() {
+      imgIndex = imgIndex > 0 ? imgIndex - 1 : imgUrlsArr.length - 1;
+      renderImage();
+    }
+
+    function nextImg() {
+      imgIndex = imgIndex < imgUrlsArr.length - 1 ? imgIndex + 1 : 0;
+      renderImage();
+    }
+
+    // Set up click event listeners for prev/next buttons
+    const prevButton = document.getElementById("prev-button");
+    const nextButton = document.getElementById("next-button");
+
+    if (prevButton) {
+      prevButton.addEventListener("click", previousImg);
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener("click", nextImg);
+    }
+
+    renderImage();
   }
+});
 
-  window.previousImg = function () {
-    imgIndex = imgIndex > 0 ? imgIndex - 1 : imgUrlsArr.length - 1;
-    renderImage();
-  };
-
-  window.nextImg = function () {
-    imgIndex = imgIndex < imgUrlsArr.length - 1 ? imgIndex + 1 : 0;
-    renderImage();
-  };
-
-  renderImage();
 
 
 //Term-definition Toggle
