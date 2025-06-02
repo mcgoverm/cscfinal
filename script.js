@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   renderImage();
-});
 
 
 //Term-definition Toggle
