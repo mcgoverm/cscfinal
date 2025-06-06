@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header -->
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- Grid with famous regattas -->
+<body>
+	<h1 style="font-family: Georgia, serif; color: dodgerBlue; font-size: 400%">Famous Races</h1>
+	<nav>
+		<ul style="list-style: none; display: flex; justify-content: center; background-color: #333; padding: 10px 0;">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="mcgovern-raceplan.html">Race Plan</a></li>
+			<li><a href="mcgovern-races.html">Famous Races</a></li>
+			<li><a href="mcgovern-terminology.html">Terminology</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h2>Click on the regatta name to visit their website!</h2>
+		<div class="twogrid">
+			<div><img src="Images/HOCR.jpg" alt="Head of the Charles river" width="400" height="300" class="border">
+			<a href="https://www.hocr.org/" style="text-decoration: none;">
+				<h3>Head of the Charles Regatta, Massachusetts</h3>
+			</a>
+			<p>Attracting over 11,000 athletes from around the world, this Boston regatta is the largest two-day rowing event globally.</p></div>
+
+			<div><img src="Images/henley.jpg" alt="Henley Royal Regatta river" width="400" height="300" class="border">
+			<a href="https://www.hrr.co.uk/" style="text-decoration: none;">
+				<h3>Henley Royal Regatta, UK</h3>
+			</a>
+			<p>Drawing elite crews from the UK, U.S., and beyond, this invitation-only event hosts thousands of spectators along the Thames.</p></div>
+
+			<div><img src="Images/metro.jpg" alt="Metropolitan Regatta river" width="400" height="300" class="border">
+			<a href="https://metregatta.org/?page_id=6" style="text-decoration: none;">
+				<h3>Metropolitan Regatta, UK</h3>
+			</a>
+			<p> Held in New York and featuring hundreds of athletes, it draws competitive junior, collegiate, and club crews from the Northeast U.S. and beyond.</p></div>
+		
+			<div><img src="Images/schuylkill.jpg" alt="Head of the Schuylkill River" width="400" height="300" class="border">
+			<a href="https://hosr.org/" style="text-decoration: none;">
+				<h3>Head of the Schuylkill, Pennsylvania</h3>
+			</a>
+			<p>With more than 8,000 rowers from across the U.S. and internationally, it’s one of the largest head races in the country.</p></div>
+		
+			<div><img src="Images/dadvail.jpg" alt="Dad Vail river" width="400" height="300" class="border">
+			<a href="https://dadvail.org/" style="text-decoration: none;">
+				<h3>Jefferson Dad Vail Regatta, New Jersey</h3>
+			</a>
+			<p>America's largest collegiate regatta, hosting over 100 schools and thousands of student-athletes, mostly from the U.S. and Canada.</p></div>
+		
+			<div><img src="Images/IRA.jpg" alt="IRA river" width="400" height="300" class="border">
+			<a href="https://www.irarowing.com/2025-ira-national-championship" style="text-decoration: none;">
+				<h3>Intercollegiate Rowing Association Regatta, New Jersey</h3>
+			</a>
+			<p>The U.S. collegiate men's  and women's championship featuring top varsity crews from dozens of elite programs nationwide.</p></div>
+		</div>
+	</section>
+	<section>
+		<!-- Race highlight -->
+		<div class="line-separator"></div>
+		<h3>Do you have a race that you want to be highlighted?</h3>
+		<input id="name" />
+		<button id="submit">Submit</button>
+		<p id="output"></p>
+	</section>
+</body>
+</html>
