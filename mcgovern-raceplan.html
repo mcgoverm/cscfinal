@@ -4,13 +4,12 @@
 <!-- Header -->
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<!-- Links to other pages -->
 <body>
-	<h1 style="font-family: Georgia, serif; color: dodgerBlue; font-size: 400%">Race Plan</h1>
+	<h1 style="font-family: Georgia, serif; color: dodgerBlue; font-size: 400%">Teaching Rowing</h1>
+	<!-- General description of rowing -->
 		<nav>
 			<ul style="list-style: none; display: flex; justify-content: center; background-color: #333; padding: 10px 0;">
 				<li><a href="index.html">Home</a></li>
@@ -19,48 +18,56 @@
 				<li><a href="mcgovern-terminology.html">Terminology</a></li>
 			</ul>
 		</nav>
-	
-	<!-- Interactive race walk-through -->
-	<section>
-		<h2>Race Walk-through</h2>
-		<p>Use the buttons below to understand what it is like on the race course!</p>
-		<div class="center">
-			<div class="container">
-				<div class="water">
-				<img id="boat" src="Images/boat.png" alt="Boat">
-				</div>
-				<div id="message"></div>
+		<img src="Images/home.jpg" alt="women's 8 boat rowing" style="width: 80%; border: solid;
+		color:dodgerblue;">
+		<p>Rowing is one of the oldest and most prestigious sports on the planet, with evidence suggesting 
+		the first rowing races, regattas, may have occurred as long ago as the Egyptian era. Oxford and Cambridge University 
+		organized a competitive regatta in 1828.</p>
+		<p>This website teaches the basics of rowing from your first day to race day. 
+		The sport takes an immense amount of physical and mental strength, high levels of stamina, and seamless 
+		synchronisation when practicing and competing as a team.</p>
 
-				<div class="controls">
-				<button id="left">&larr;</button>
-				<button id="right">&rarr;</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Types of races -->
+	<!-- Grid with position descriptions -->
 	<section>
 		<div class="line-separator"></div>
-		<h2>Fall versus Spring Racing</h2>
+		<h2>General Information</h2>
 		<div class="twogrid">
-			<div><img src="Images/fall.png" alt="starting chute for 5K" class="border">
-			<h3>Fall 5Ks</h3>
-			<ul>
-				<li>5K distance</li>
-				<li>28-30 stroke rate</li>
-				<li>Start via headrace</li>
-			</ul>
-		</div>
-		<div><img src="Images/stakeboat.jpg" alt="stakeboar start for a 2K" class="border">
-		<h3>Spring 2Ks</h3>
-			<ul>
-				<li>2K distance</li>
-				<li>30-32 stroke rate</li>
-				<li>Start via stakeboat</li>
-			</ul>
+			<div><img src="Images/boattypes.jpeg" alt="scull vs sweep diagram" width="100%" height="100%" class="border"></div>
+			<div><h3>Types of Rowing</h3>
+			<p>There are two types of ways that you can race. You can either: sweep or scull. Sweeping occurs 
+			with one oar, people normally are rowing with their dominant hand because the inside hand feathers 
+			and the ouside hand controls your hand through the stroke. While in sculling,You have an oar in both 
+			hands.</p>
+			<p>People can race in a variety of boats. Depending on the amount of people rowing, you can be in a 
+			boat alone or with 8 people at most. Because you are rowing on both sides, sculling can only be done in a single.
+			The difference between a double and a pair is that a double is sculling, while a pair is sweeping. Some boats 
+			can row without a coxswain as well, who steers the boat and coaches them.</p></div>
+			<div class="line-separator" style="grid-column: 1 / -1;"></div>
+			<div><h3>Who is a Coxswain?</h3>
+			<p>Coxswains are typically the smallest people in the boat; most are under 5'4. While they have "cox boxes," essentially a 
+			small microphone that amplifies their voice throughout the boat, they also have to be confident in their ability to lead
+			their boat and their rowers. They can be especially useful because they act as the coaches of
+			the boat.</p>
+			<p>Generally, coxswains are most focused on keeping the rowers safe and helping them hit their
+			objectives for the day. In practice, the coach will give them the workout and that is what They
+			facilitate on the water. They often look out for technique and can point out changes that occur 
+			microscopically in the boat. As a coxswain, you can hear, see, and feel when the boat is not 
+			moving all together.</p></div>
+			<div><img src="Images/coxswain.avif" alt="coxswain" width="100%" height="100%" class="border"></div>
+			<div class="line-separator" style="grid-column: 1 / -1;"></div>
+			<div><img src="Images/positions.png" alt="diagram of an 8 boat" width="100%" height="100%" class="border"></div>
+			<div><h3>Positions in all Boats</h3>
+			<p>Typically, positions only matter in boats of 8 or 4 people,
+			these are called by their name: 8s and 4s. Starting in a 4, the
+			order of the seats are: bow/1, 2, 3, stroke/4. In an 8: bow/1, 2, 3, 4, 5, 6,
+			7, stroke/8. In all boats, the ypical language used is that the seat closest to the bow
+			is the bow, while the seat closest to the stern is the stroke.</p>
+			<p>Bow/1 seat is the person who is in charge of the "set", thestability of the 
+			boat. Every seat in the middle--2/3 in a 4 and 2/3/4/5/6/7 in an 8--are considered the most powerful.
+			These rowers are less affected by the boat's movements, like the keel, and are driving to their
+			maximum power output. The stroke is closest to the stern and is the seat in front of everyone. They control the rate
+			and are able to hold a steady stroke to guide everyone in the boat.</p></div>
 		</div>
 	</section>
-	</div>
 </body>
 </html>
