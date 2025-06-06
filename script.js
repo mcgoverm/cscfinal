@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
       renderImage();
     }
 
-    // Add event listeners for buttons
     const leftArrow = document.getElementById("leftArrow");
     const rightArrow = document.getElementById("rightArrow");
 
